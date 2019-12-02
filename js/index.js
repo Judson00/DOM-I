@@ -52,8 +52,6 @@ nav[3].innerText = siteContent.nav['nav-item-4'];
 nav[4].innerText = siteContent.nav['nav-item-5'];
 nav[5].innerText = siteContent.nav['nav-item-6'];
 
-// let headCTA = document.querySelector('#cta-text');
-
 let title = document.querySelector('h1');
 title.innerHTML = siteContent.cta.h1;
 
@@ -73,44 +71,9 @@ let featuresP = topContentItems[0].querySelector('p');
 featuresH4.innerText = siteContent['main-content']['features-h4'];
 featuresP.innerText = siteContent['main-content']['features-content'];
 
-let aboutH4 = topContentItems[1].querySelector('h4');
-let aboutP = topContentItems[1].querySelector('p');
-aboutH4.innerText = siteContent['main-content']['about-h4'];
-aboutP.innerText = siteContent['main-content']['about-content'];
 
-let middleImg = document.querySelector('#middle-img');
-middleImg.src = siteContent['main-content']['middle-img-src'];
 
-let bottomContent = document.querySelector('.bottom-content');
-let bottomContentItems = bottomContent.querySelectorAll('.text-content');
-let servicesH4 = bottomContentItems[0].querySelector('h4');
-console.log(servicesH4);
-let servicesP = bottomContentItems[0].querySelector('p');
-servicesH4.innerText = siteContent['main-content']['services-h4'];
-servicesP.innerText = siteContent['main-content']['services-content'];
 
-let productH4 = bottomContentItems[1].querySelector('h4');
-let productP = bottomContentItems[1].querySelector('p');
-productH4.innerText = siteContent['main-content']['product-h4'];
-productP.innerText = siteContent['main-content']['product-content'];
-
-let visionH4 = bottomContentItems[2].querySelector('h4');
-let visionP = bottomContentItems[2].querySelector('p');
-visionH4.innerText = siteContent['main-content']['vision-h4'];
-visionP.innerText = siteContent['main-content']['vision-content'];
-
-let contactInfo = document.querySelector('.contact');
-let contactH4 = contactInfo.querySelector('h4');
-contactH4.innerText = siteContent.contact['contact-h4'];
-
-let contactInfoItems = contactInfo.querySelectorAll('p');
-contactInfoItems[0].innerHTML = siteContent.contact.address;
-contactInfoItems[1].innerText = siteContent.contact.phone;
-contactInfoItems[2].innerText = siteContent.contact.email;
-
-let foot = document.querySelector('footer');
-let footP = foot.querySelector('p');
-footP.innerText = siteContent.footer.copyright;
 
 
 
