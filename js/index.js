@@ -37,6 +37,46 @@ const siteContent = {
   },
 };
 
+
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const navContainer = document.querySelector('nav')
+
+let anchorTag = document.querySelectorAll('a')
+anchorTag.forEach(item => item.style.color = 'green');
+
+const anchorOne = anchorTag[0];
+anchorOne.textContent = 'Services'
+
+const anchorTwo = anchorTag[1];
+anchorTwo.textContent = 'Product'
+
+const anchorThree = anchorTag[2];
+anchorThree.textContent = 'Vision'
+
+const anchorFour = anchorTag[3];
+anchorFour.textContent = 'Features'
+
+const anchorFive = anchorTag[4];
+anchorFive.textContent = 'About'
+
+const anchorSix = anchorTag[5];
+anchorSix.textContent = 'Contact'
+
+const tester = document.querySelector('.cta')
+tester.style.backgroundColor = 'dodgerblue'
+
+const headline = document.querySelector('h1');
+
+
+
+
+
+
+
+
+
