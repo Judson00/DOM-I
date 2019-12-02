@@ -41,36 +41,76 @@ const siteContent = {
 
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+let logo = document.querySelector('#logo-img');
+logo.src = siteContent.nav['img-src'];
 
-const navContainer = document.querySelector('nav')
+let nav = document.querySelectorAll('a');
+nav[0].innerText = siteContent.nav['nav-item-1'];
+nav[1].innerText = siteContent.nav['nav-item-2'];
+nav[2].innerText = siteContent.nav['nav-item-3'];
+nav[3].innerText = siteContent.nav['nav-item-4'];
+nav[4].innerText = siteContent.nav['nav-item-5'];
+nav[5].innerText = siteContent.nav['nav-item-6'];
 
-let anchorTag = document.querySelectorAll('a')
-anchorTag.forEach(item => item.style.color = 'green');
+// let headCTA = document.querySelector('#cta-text');
 
-const anchorOne = anchorTag[0];
-anchorOne.textContent = 'Services'
+let title = document.querySelector('h1');
+title.innerHTML = siteContent.cta.h1;
 
-const anchorTwo = anchorTag[1];
-anchorTwo.textContent = 'Product'
+let btn = document.querySelector('button');
+btn.innerText = siteContent.cta.button;
 
-const anchorThree = anchorTag[2];
-anchorThree.textContent = 'Vision'
+let headerImg = document.querySelector('#cta-img');
+headerImg.src = siteContent.cta['img-src'];
 
-const anchorFour = anchorTag[3];
-anchorFour.textContent = 'Features'
+let mainContent = document.querySelector('#main-content');
 
-const anchorFive = anchorTag[4];
-anchorFive.textContent = 'About'
+let topContent = document.querySelector('.top-content');
 
-const anchorSix = anchorTag[5];
-anchorSix.textContent = 'Contact'
+let topContentItems = topContent.querySelectorAll('.text-content');
+let featuresH4 = topContentItems[0].querySelector('h4');
+let featuresP = topContentItems[0].querySelector('p');
+featuresH4.innerText = siteContent['main-content']['features-h4'];
+featuresP.innerText = siteContent['main-content']['features-content'];
 
-const tester = document.querySelector('.cta')
-tester.style.backgroundColor = 'dodgerblue'
+let aboutH4 = topContentItems[1].querySelector('h4');
+let aboutP = topContentItems[1].querySelector('p');
+aboutH4.innerText = siteContent['main-content']['about-h4'];
+aboutP.innerText = siteContent['main-content']['about-content'];
 
-const headline = document.querySelector('h1');
+let middleImg = document.querySelector('#middle-img');
+middleImg.src = siteContent['main-content']['middle-img-src'];
+
+let bottomContent = document.querySelector('.bottom-content');
+let bottomContentItems = bottomContent.querySelectorAll('.text-content');
+let servicesH4 = bottomContentItems[0].querySelector('h4');
+console.log(servicesH4);
+let servicesP = bottomContentItems[0].querySelector('p');
+servicesH4.innerText = siteContent['main-content']['services-h4'];
+servicesP.innerText = siteContent['main-content']['services-content'];
+
+let productH4 = bottomContentItems[1].querySelector('h4');
+let productP = bottomContentItems[1].querySelector('p');
+productH4.innerText = siteContent['main-content']['product-h4'];
+productP.innerText = siteContent['main-content']['product-content'];
+
+let visionH4 = bottomContentItems[2].querySelector('h4');
+let visionP = bottomContentItems[2].querySelector('p');
+visionH4.innerText = siteContent['main-content']['vision-h4'];
+visionP.innerText = siteContent['main-content']['vision-content'];
+
+let contactInfo = document.querySelector('.contact');
+let contactH4 = contactInfo.querySelector('h4');
+contactH4.innerText = siteContent.contact['contact-h4'];
+
+let contactInfoItems = contactInfo.querySelectorAll('p');
+contactInfoItems[0].innerHTML = siteContent.contact.address;
+contactInfoItems[1].innerText = siteContent.contact.phone;
+contactInfoItems[2].innerText = siteContent.contact.email;
+
+let foot = document.querySelector('footer');
+let footP = foot.querySelector('p');
+footP.innerText = siteContent.footer.copyright;
 
 
 
