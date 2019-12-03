@@ -43,7 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 const navContainer = document.querySelector('nav');
 
-anchorTag = document.querySelectorAll('a');
+let anchorTag = document.querySelectorAll('a');
 
 
 anchorTag.forEach(item => item.style.color = 'green');
