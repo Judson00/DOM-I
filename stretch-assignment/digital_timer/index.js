@@ -49,8 +49,4 @@ setInterval(function() {
   }
 });
 
-
-
-
-
 //Credit to Marlon del Rosario for help with this timer
