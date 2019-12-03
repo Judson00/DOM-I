@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM <br/> Is <br/> Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -39,4 +39,109 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+const navContainer = document.querySelector('nav');
+
+anchorTag = document.querySelectorAll('a');
+
+
+anchorTag.forEach(item => item.style.color = 'green');
+
+const anchorTagAuto = siteContent[Object.keys(siteContent)[0]];
+
+// anchorTag[0].innerText = siteContent.nav['nav-item-1'];
+// anchorTag[1].innerText = siteContent.nav['nav-item-2'];
+// anchorTag[2].innerText = siteContent.nav['nav-item-3'];
+// anchorTag[3].innerText = siteContent.nav['nav-item-4'];
+// anchorTag[4].innerText = siteContent.nav['nav-item-5'];
+// anchorTag[5].innerText = siteContent.nav['nav-item-6'];
+
+for (let i = 0; i < anchorTag.length; i++) {
+  anchorTag[i].textContent = anchorTagAuto[Object.keys(anchorTagAuto)[i]];
+};
+
+let appendAnchor = document.createElement('a');
+appendAnchor.textContent = 'Appended';
+appendAnchor.style.color = 'green';
+
+const newNavItem = document.querySelector('nav');
+newNavItem.append(appendAnchor);
+
+let prependAnchor = document.createElement('a');
+prependAnchor.textContent = 'Prepended';
+prependAnchor.style.color = 'green';
+
+newNavItem.prepend(prependAnchor);
+
+const tester = document.querySelector('.cta');
+tester.style.backgroundColor = 'dodgerblue';
+
+let title = document.querySelector('h1');
+title.innerHTML = siteContent.cta.h1;
+
+let btn = document.querySelector('button');
+btn.innerText = siteContent.cta.button;
+
+let headerImg = document.querySelector('#cta-img');
+headerImg.src = siteContent.cta['img-src'];
+
+let mainContent = document.querySelector('#main-content');
+
+let topContent = document.querySelector('.top-content');
+
+let topContentItems = topContent.querySelectorAll('.text-content');
+let featuresH4 = topContentItems[0].querySelector('h4');
+let featuresP = topContentItems[0].querySelector('p');
+featuresH4.innerText = siteContent['main-content']['features-h4'];
+featuresP.innerText = siteContent['main-content']['features-content'];
+
+let aboutH4 = topContentItems[1].querySelector('h4');
+let aboutP = topContentItems[1].querySelector('p');
+aboutH4.innerText = siteContent['main-content']['about-h4'];
+aboutP.innerText = siteContent['main-content']['about-content'];
+
+let middleImg = document.querySelector('#middle-img');
+middleImg.src = siteContent['main-content']['middle-img-src'];
+
+let bottomContent = document.querySelector('.bottom-content');
+let bottomContentItems = bottomContent.querySelectorAll('.text-content');
+let servicesH4 = bottomContentItems[0].querySelector('h4');
+console.log(servicesH4);
+let servicesP = bottomContentItems[0].querySelector('p');
+servicesH4.innerText = siteContent['main-content']['services-h4'];
+servicesP.innerText = siteContent['main-content']['services-content'];
+
+let productH4 = bottomContentItems[1].querySelector('h4');
+let productP = bottomContentItems[1].querySelector('p');
+productH4.innerText = siteContent['main-content']['product-h4'];
+productP.innerText = siteContent['main-content']['product-content'];
+
+let visionH4 = bottomContentItems[2].querySelector('h4');
+let visionP = bottomContentItems[2].querySelector('p');
+visionH4.innerText = siteContent['main-content']['vision-h4'];
+visionP.innerText = siteContent['main-content']['vision-content'];
+
+let contactInfo = document.querySelector('.contact');
+let contactH4 = contactInfo.querySelector('h4');
+contactH4.innerText = siteContent.contact['contact-h4'];
+
+let contactInfoItems = contactInfo.querySelectorAll('p');
+contactInfoItems[0].innerHTML = siteContent.contact.address;
+contactInfoItems[1].innerText = siteContent.contact.phone;
+contactInfoItems[2].innerText = siteContent.contact.email;
+
+let foot = document.querySelector('footer');
+let footP = foot.querySelector('p');
+footP.innerText = siteContent.footer.copyright;
+
+
+
+
+
+
+
+
+
+
+

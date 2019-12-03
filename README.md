@@ -3,7 +3,7 @@
 ## Project Description
 You are going to be emulating a content managment system by controlling the content in the JavaScript file instead of the HTML file. This project is an excercise pointed at selecting elements and then updating them without touching the HTML file using the DOM.
 
-You have been provided a [JSON object](js/index.js) with all the necessary data to accomplish this task.  Use dot or bracket notation to traverse the data provided.
+You have been provided a [JSON object](js/index.js) with all the necessary data to accomplish this task. Use dot or bracket notation to traverse the data provided.
 
 **ONE RULE: You cannot update the HTML or CSS files directly.  You must use JavaScript and the DOM only for your tasks today.**
 
