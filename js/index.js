@@ -44,6 +44,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 const navContainer = document.querySelector('nav');
 
 anchorTag = document.querySelectorAll('a');
+
+
 anchorTag.forEach(item => item.style.color = 'green');
 
 const anchorTagAuto = siteContent[Object.keys(siteContent)[0]];
@@ -58,6 +60,19 @@ const anchorTagAuto = siteContent[Object.keys(siteContent)[0]];
 for (let i = 0; i < anchorTag.length; i++) {
   anchorTag[i].textContent = anchorTagAuto[Object.keys(anchorTagAuto)[i]];
 };
+
+let appendAnchor = document.createElement('a');
+appendAnchor.textContent = 'Appended';
+appendAnchor.style.color = 'green';
+
+const newNavItem = document.querySelector('nav');
+newNavItem.append(appendAnchor);
+
+let prependAnchor = document.createElement('a');
+prependAnchor.textContent = 'Prepended';
+prependAnchor.style.color = 'green';
+
+newNavItem.prepend(prependAnchor);
 
 const tester = document.querySelector('.cta');
 tester.style.backgroundColor = 'dodgerblue';
